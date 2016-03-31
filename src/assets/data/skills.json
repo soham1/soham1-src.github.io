@@ -1,0 +1,12 @@
+{
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "technologies": ["JavaScript", "HTML", "CSS", "SQL"]
+    },
+    {
+      "category": "Java Technologies",
+      "technologies": ["Spring Boot", "Maven", "Servlets", "JSPs", "OAuth2", "Webjars", "JPA"]
+    }
+  ]
+}
