@@ -1,0 +1,20 @@
+{
+  "educations": [
+    {
+      "name": "Front End Developer Certificate",
+      "origin": "Free Code Camp"
+    },
+    {
+      "name": "Back End Developer Certificate",
+      "origin": "Free Code Camp"
+    },
+    {
+      "name": "Preparing for the AP Computer Science A Exam",
+      "origin": "Cooper Union - Edx"
+    },
+    {
+      "name": "Intro to JS: Drawing & Animation",
+      "origin": "Khan Academy"
+    }
+  ]
+}

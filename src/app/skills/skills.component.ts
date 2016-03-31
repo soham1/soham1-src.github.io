@@ -16,11 +16,13 @@ console.log('`Skills` component loaded asynchronously');
     <table>
       <tr *ngFor="#skill of skills">
         <td>{{skill.category}}</td>
+        <td>
+          <ul *ngFor="#technology of skill.technologies">
+            <li>{{technology}}</li>
+          </ul>
+        </td>
       </tr>
     </table>
-    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-      <i class="material-icons">add</i>
-    </button>
   `
 })
 

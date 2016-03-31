@@ -8,7 +8,7 @@ export interface ComputerScienceEducation {
   origin: string;
 }
 
-export interface Achievement {
+export interface Achievements {
   name: string;
   description: string;
 }
@@ -26,11 +26,11 @@ export interface ComputerScienceSkills {
 export interface MyGithubProjects {
   projectName: string;
   projectURL: string;
-  description : string;
+  description: string;
 }
 
 export interface SoftSkills {
-  description : string;
+  description: string;
 }
 
 export interface MyInfo {
@@ -42,7 +42,15 @@ export interface MyInfo {
 
 @Injectable()
 export class ResumeDataService {
-  constructor(private _http: Http) { }
+  public titleMap = new Map();
+
+  constructor(private _http: Http) {
+    this.titleMap.set("", "Computer Science Skills");
+    this.titleMap.set("skills", "Computer Science Skills");
+    this.titleMap.set("softSkills", "Soft Skills");
+    this.titleMap.set("educations", "Computer Science Education");
+    this.titleMap.set("achievements", "Achievements");
+  }
 
   getSkills() {
     return this._http.get("/assets/data/skills.json")
@@ -54,6 +62,20 @@ export class ResumeDataService {
   getSoftSkills() {
     return this._http.get("/assets/data/softSkills.json")
       .map((response: Response) => <SoftSkills[]>response.json().softSkills)
+      .do(data => console.log(data))
+      .catch(this.handleError);
+  }
+
+  getEducations() {
+    return this._http.get("/assets/data/educations.json")
+      .map((response: Response) => <ComputerScienceEducation[]>response.json().educations)
+      .do(data => console.log(data))
+      .catch(this.handleError);
+  }
+  
+  getAchievements() {
+    return this._http.get("/assets/data/achievements.json")
+      .map((response: Response) => <Achievements[]>response.json().achievements)
       .do(data => console.log(data))
       .catch(this.handleError);
   }

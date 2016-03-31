@@ -1,21 +1,45 @@
-<div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-  <header class="demo-drawer-header">
-    <img src="https://github.com/google/material-design-lite/blob/master/templates/dashboard/images/user.jpg" class="demo-avatar">
-    <div class="demo-avatar-dropdown">
-            <span>sohamashodiya@gmail.com</span>
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">{{pageTitle}}</span>
             <div class="mdl-layout-spacer"></div>
-            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        </div>
+    </header>
+    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+            <img src="assets/img/user.jpg" class="demo-avatar">
+            <div class="demo-avatar-dropdown">
+                <span>Soham Ashodiya</span>
+                <div class="mdl-layout-spacer"></div>
+                <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
               <i class="material-icons" role="presentation">arrow_drop_down</i>
               <span class="visuallyhidden">More</span>
             </button>
-            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-              <li class="mdl-menu__item"><i class="material-icons">navigation</i>Fremont, CA</li>
-              <li class="mdl-menu__item"><i class="material-icons">local_phone</i>(510)471-7132</li>
-            </ul>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                    <li class="mdl-menu__item">Fremont, California</li>
+                    <li class="mdl-menu__item">(510) 471-7132</li>
+                    <li class="mdl-menu__item">sohamashodiya@gmail.com</li>
+                </ul>
+            </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+            <a class="mdl-navigation__link" [routerLink]=" ['Skills'] ">
+                <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Skill
+            </a>
+            <a class="mdl-navigation__link" [routerLink]=" ['SoftSkills'] ">
+                <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Soft Skills
+            </a>
+            <a class="mdl-navigation__link" [routerLink]=" ['Educations'] ">
+                <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Education
+            </a>
+            <a class="mdl-navigation__link" [routerLink]=" ['Achievements'] ">
+                <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Achievements
+            </a>
+        </nav>
     </div>
-  </header>
-  <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800" router-active>
-    <a class="mdl-navigation__link" [routerLink]=" ['Home'] "><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-    <a class="mdl-navigation__link" [routerLink]=" ['Skills'] "><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">stars</i>Skills</a>
-  </nav>
+    <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
 </div>
