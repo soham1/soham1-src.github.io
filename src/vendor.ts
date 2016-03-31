@@ -10,7 +10,7 @@ import 'angular2/core';
 import 'angular2/common';
 import 'angular2/http';
 import 'angular2/router';
-import 'material-design-lite/material';
+import 'material-design-lite';
 
 // RxJS
 import 'rxjs/add/operator/map';

@@ -10,7 +10,6 @@ import {AppState} from './app.service';
 import {RouterActive} from './router-active';
 import {ResumeDataService} from './resume-data.service';
 import {HTTP_PROVIDERS} from 'angular2/http';
-
 /*
  * App Component
  * Top Level Component
@@ -20,62 +19,43 @@ import {HTTP_PROVIDERS} from 'angular2/http';
   pipes: [ ],
   providers: [ ResumeDataService, HTTP_PROVIDERS ],
   directives: [ RouterActive ],
-  styles: [`
-    h1 {
-      font-family: Arial, Helvetica, sans-serif
-    }
-    nav ul {
-      display: inline;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 60px;
-    }
-    nav li {
-      display: inline;
-    }
-    nav li.active {
-      background-color: lightgray;
-    }
-  `],
-  template: `
-    <header>
-      <nav>
-        <h1>Hello {{ name }}</h1>
-        <ul>
-          <li router-active>
-            <a [routerLink]=" ['Index'] ">Index</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['Home'] ">Home</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['About'] ">About</a>
-          </li>
-          <li router-active>
-            <a [routerLink]=" ['Skills'] ">Skills</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-
-    <footer>
-      WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a>
-      <div>
-        <img [src]="angularclassLogo" width="10%">
-      </div>
-    </footer>
-
-    <pre>this.appState.state = {{ appState.state | json }}</pre>
-  `
+  // styleUrls: ["app/app.component.css"],
+  templateUrl: "app/app.component.html",
+  //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
+  // template: `
+  //   <header>
+  //     <nav>
+  //       <h1>Hello {{ name }}</h1>
+  //       <ul>
+  //         <li router-active>
+  //           <a [routerLink]=" ['Home'] ">Home</a>
+  //         </li>
+  //         <li router-active>
+  //           <a [routerLink]=" ['About'] ">About</a>
+  //         </li>
+  //         <li router-active>
+  //           <a [routerLink]=" ['Skills'] ">Skills</a>
+  //         </li>
+  //       </ul>
+  //     </nav>
+  //   </header>
+  //
+  //   <main>
+  //     <router-outlet></router-outlet>
+  //   </main>
+  //
+  //   <footer>
+  //     WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a>
+  //     <div>
+  //       <img [src]="angularclassLogo" width="10%">
+  //     </div>
+  //   </footer>
+  //
+  //   <pre>this.appState.state = {{ appState.state | json }}</pre>
+  // `
 })
 @RouteConfig([
-  { path: '/',      name: 'Index', component: Home, useAsDefault: true },
-  { path: '/home',  name: 'Home',  component: Home },
+  { path: '/', name: 'Home', component: Home, useAsDefault: true },
   // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
   { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') },
   { path: '/skills',  name: 'Skills',  component: SkillsComponent }

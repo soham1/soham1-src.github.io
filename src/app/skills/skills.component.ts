@@ -11,6 +11,7 @@ console.log('`Skills` component loaded asynchronously');
 
 @Component({
   selector: 'skills',
+  //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
   template: `
     <table>
       <tr *ngFor="#skill of skills">
