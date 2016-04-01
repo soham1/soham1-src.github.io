@@ -60,6 +60,7 @@ export class ResumeDataService {
         this.titleMap.set("tools", "Software and Tools");
         this.titleMap.set("projects", "Github Projects");
         this.titleMap.set("aboutMe", "About Me");
+        this.titleMap.set("behindTheScenes", "Behind the Scenes");
     }
 
     getSkills() {

@@ -13,6 +13,7 @@ import {AchievementsComponent} from './achievements/achievements.component';
 import {ToolsComponent} from './tools/tools.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {AboutMeComponent} from './about-me/about-me.component';
+import {BehindTheScenesComponent} from './behind-the-scenes/behind-the-scenes.component';
 import {AppState} from './app.service';
 import {RouterActive} from './router-active';
 import {ResumeDataService} from './resume-data.service';
@@ -70,7 +71,8 @@ var material = require('exports?componentHandler&MaterialRipple!material-design-
   { path: '/achievements',  name: 'Achievements',  component: AchievementsComponent },
   { path: '/tools', name: 'Tools', component: ToolsComponent},
   { path: '/projects', name: 'Projects', component: ProjectsComponent},
-  { path: '/aboutMe', name: 'AboutMe', component: AboutMeComponent}
+  { path: '/aboutMe', name: 'AboutMe', component: AboutMeComponent},
+  { path: '/behindTheScenes', name: 'BehindTheScenes', component: BehindTheScenesComponent}
 ])
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
