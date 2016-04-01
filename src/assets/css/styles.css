@@ -7,3 +7,25 @@ html, body {
     font-size: 20px;
 }
 
+demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+
+.objective > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../img/objective.jpg') 15% no-repeat #46B6AC;
+}
+
+.mission > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../img/mission.jpg') 15% no-repeat #46B6AC;
+}
+
+.philosophy > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../img/philosophy.jpg') 15% no-repeat #46B6AC;
+}
