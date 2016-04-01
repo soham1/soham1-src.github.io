@@ -1,0 +1,49 @@
+{
+    "projects": [
+        {
+           "projectName": "Voting Application", 
+           "projectURL": "https://github.com/soham1/fcc-votingapp",
+           "description": "An application that manages polls and shows results graphically."
+        },
+        {
+            "projectName": "Nightlife Coordinator",
+            "projectURL": "https://github.com/soham1/fcc-nightlife",
+            "description": "An application that allows people to know what bars others are going tonight."
+        },
+        {
+            "projectName": "Chart of the Stock Market",
+            "projectURL": "https://github.com/soham1/fcc-stock",
+            "description": "An application which shows the latest stock prices. This is an interactive, collaborative, and real-time application."
+        },
+        {
+            "projectName": "Book Trading Application",
+            "projectURL": "https://github.com/soham1/fcc-booktrade",
+            "description": "An application which allows users to trade books." 
+        },
+        {
+            "projectName": "Fairy Tail Downloader",
+            "projectURL": "https://github.com/soham1/ft-dl",
+            "description": "This is a Chrome Application which allows users to download Fairy Tail video episodes in bulk."
+        },
+        {
+            "projectName": "Spark Dashboard",
+            "projectURL": "https://github.com/soham1/spark-dashboard",
+            "description": "Manage massive email campaigns using SparkPost APIs and store email tracking data on Amazon AWS using NetApp’s OnTAP storage appliances."
+        },
+        {
+            "projectName": "Pinterest Clone",
+            "projectURL": "https://github.com/soham1/fcc-pinterest-clone",
+            "description": "Just as the name suggests, this is a simple clone of Pinterest."
+        },
+        {
+            "projectName": "Url Shortener",
+            "projectURL": "https://github.com/soham1/fcc-url-shortener",
+            "description": "An API service which allows client to generate a short URL."
+        },
+        {
+            "projectName": "Timestamp Microservice",
+            "projectUrl": "https://github.com/soham1/fcc-timestamp",
+            "description": "An API service which allows users to convert between Unix time and universal time formats."
+        }
+    ]
+}
