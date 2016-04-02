@@ -1,32 +1,24 @@
 {
-    "tools":[
-        {
-            "name": "Atom, Brackets, Visual Studio Code",
-            "description": "Code Editors"
-        },
-        {
-            "name": "Eclipse, STS, Netbeans",
-            "description": "Java IDE"
-        },
-        {
-            "name": "Microsoft Office",
-            "description": "Office Tools"
-        },
-        {
-            "name": "Windows Movie Maker",
-            "description": "Video Editing Software"
-        },
-        {
-            "name": "C9 IDE",
-            "description": "Cloud IDE and Server"
-        },
-        {
-            "name": "Github",
-            "description": "Source Code Repository"
-        },
-        {
-            "name": "Oracle Virtual Box",
-            "description": "Server Virtualization"
-        }
-    ]
+    "tools": [{
+        "name": "Atom, Brackets, Visual Studio Code",
+        "description": "Code Editors"
+    }, {
+        "name": "Eclipse, STS, Netbeans",
+        "description": "Java IDE"
+    }, {
+        "name": "Microsoft Office",
+        "description": "Office Tools"
+    }, {
+        "name": "Windows Movie Maker",
+        "description": "Video Editing Software"
+    }, {
+        "name": "C9 IDE",
+        "description": "Cloud IDE and Server"
+    }, {
+        "name": "Github",
+        "description": "Source Code Repository"
+    }, {
+        "name": "Oracle Virtual Box",
+        "description": "Server Virtualization"
+    }]
 }

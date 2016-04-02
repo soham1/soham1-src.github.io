@@ -1,20 +1,30 @@
 {
-  "educations": [
-    {
-      "name": "Front End Developer Certificate",
-      "origin": "Free Code Camp"
-    },
-    {
-      "name": "Back End Developer Certificate",
-      "origin": "Free Code Camp"
-    },
-    {
-      "name": "Preparing for the AP Computer Science A Exam",
-      "origin": "Cooper Union - Edx"
-    },
-    {
-      "name": "Intro to JS: Drawing & Animation",
-      "origin": "Khan Academy"
-    }
-  ]
+    "educations": [{
+        "name": "Front End Developer Certificate",
+        "origin": "Free Code Camp"
+    }, {
+        "name": "Back End Developer Certificate",
+        "origin": "Free Code Camp"
+    }, {
+        "name": "Preparing for the AP Computer Science A Exam",
+        "origin": "Cooper Union - Edx"
+    }, {
+        "name": "Intro to JS: Drawing & Animation",
+        "origin": "Khan Academy"
+    }, {
+        "name": "Java Fundamentals: The Java Language",
+        "origin": "Pluralsight"
+    }, {
+        "name": "SQL Server 2012 Querying",
+        "origin": "Pluralsight"
+    }, {
+        "name": "Introduction to Computer Science – CS50x",
+        "origin": "Harvard University - Edx"
+    }, {
+        "name": "Javascript Fundamentals",
+        "origin": "Lynda"
+    }, {
+        "name": "Bootstrap 3",
+        "origin": "Pluralsight"
+    }]
 }

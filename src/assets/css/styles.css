@@ -84,3 +84,10 @@ html, body {
     top: 78px;
     left: 74px;    
 }
+
+.softSkills > .mdl-card__title{
+    color: #fff;
+    height: 176px;
+    background: url('../img/skillBanner.jpg') center / cover;
+}
+

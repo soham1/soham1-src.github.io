@@ -1,5 +1,11 @@
-import {Component, OnInit} from 'angular2/core';
-import {ResumeDataService, SoftSkills} from '../resume-data.service';
+import {
+    Component,
+    OnInit
+} from 'angular2/core';
+import {
+    ResumeDataService,
+    SoftSkills
+} from '../resume-data.service';
 
 /*
  * We're loading this component asynchronously
@@ -10,29 +16,40 @@ import {ResumeDataService, SoftSkills} from '../resume-data.service';
 console.log('`Soft Skills` component loaded asynchronously');
 
 @Component({
-  selector: 'soft-skills',
-  //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
-  template: `
-    <ul>
-      <li *ngFor="#softSkill of softSkills">
-        {{softSkill.description}}
-      </li>
-    </ul>
+    selector: 'soft-skills',
+    //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
+    template: `
+    
+    
+    <div class="demo-card-wide softSkills mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">What is my EQ?</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <ul>
+                <li *ngFor="#softSkill of softSkills">
+                    {{softSkill.description}}
+                </li>
+            </ul>
+        </div>
+    </div>
   `
 })
 
 export class SoftSkillsComponent implements OnInit {
-  softSkills: SoftSkills[];
-  errorMessage: string;
-  constructor(private _ResumeDataService: ResumeDataService) { }
+    softSkills: SoftSkills[];
+    errorMessage: string;
+    constructor(private _ResumeDataService: ResumeDataService) {}
 
-  ngOnInit() { this.getSoftSkills(); }
+    ngOnInit() {
+        this.getSoftSkills();
+    }
 
-  getSoftSkills() {
-      this._ResumeDataService.getSoftSkills()
-        .subscribe(
-            softSkills => this.softSkills = softSkills,
-            error =>  this.errorMessage = <any>error
-        );
-  }
+    getSoftSkills() {
+        this._ResumeDataService.getSoftSkills()
+            .subscribe(
+                softSkills => this.softSkills = softSkills,
+                error => this.errorMessage = < any > error
+            );
+    }
 }
