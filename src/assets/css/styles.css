@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
@@ -7,31 +8,38 @@ html, body {
     font-size: 20px;
 }
 
-.objective, .mission, .philosophy{
+.introduction {
+    width: 1022px;
+}
+
+.my-topics {
+    padding-left: 0;
+}
+
+.objective,
+.mission,
+.philosophy {
     min-height: 260px;
 }
 
 .objective > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../img/objective.jpg') no-repeat #46B6AC;
+    color: #fff;
+    background: url('../img/objective.jpg') no-repeat #46B6AC;
 }
 
 .mission > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../img/mission.jpg') no-repeat #46B6AC;
+    color: #fff;
+    background: url('../img/mission.jpg') no-repeat #46B6AC;
 }
 
 .philosophy > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../img/philosophy.jpg') no-repeat #46B6AC;
+    color: #fff;
+    background: url('../img/philosophy.jpg') no-repeat #46B6AC;
 }
 
 .demo-card-wide.mdl-card {
-  width: 800px;
-  margin-bottom: 10px;
+    width: 800px;
+    margin-bottom: 10px;
 }
 
 .logo {
@@ -40,54 +48,134 @@ html, body {
 }
 
 .github.logo.mdl-card {
-  background: url('../img/github-logo.png') no-repeat;
+    background: url('../img/github-logo.png') no-repeat;
 }
 
 .ng2.logo.mdl-card {
-  background: url('../img/ng2-logo.png') no-repeat;
+    background: url('../img/ng2-logo.png') no-repeat;
 }
 
 .mdl.logo.mdl-card {
-  background: url('../img/mdl-logo.png') no-repeat;
+    background: url('../img/mdl-logo.png') no-repeat;
 }
 
 .webpack.logo.mdl-card {
-  background: url('../img/webpack-logo.png') no-repeat;
+    background: url('../img/webpack-logo.png') no-repeat;
 }
 
 .npm.logo.mdl-card {
-  background: url('../img/npm-logo.png') no-repeat;
+    background: url('../img/npm-logo.png') no-repeat;
 }
 
 .json-rest.logo.mdl-card {
-  background: url('../img/json-rest-logo.png') no-repeat;
+    background: url('../img/json-rest-logo.png') no-repeat;
 }
 
 .node.logo.mdl-card {
-  background: url('../img/node-logo.jpg') no-repeat;
+    background: url('../img/node-logo.jpg') no-repeat;
 }
 
 .typescript.logo.mdl-card {
-  background: url('../img/typescript-logo.png') no-repeat;
+    background: url('../img/typescript-logo.png') no-repeat;
 }
 
 .es6.logo.mdl-card {
-  background: url('../img/es6-logo.png') no-repeat;
+    background: url('../img/es6-logo.png') no-repeat;
 }
 
 .html5.logo.mdl-card {
-  background: url('../img/html5-logo.png') no-repeat;
+    background: url('../img/html5-logo.png') no-repeat;
 }
 
 .logo .material-icons {
     position: absolute;
     top: 78px;
-    left: 74px;    
+    left: 74px;
 }
 
-.softSkills > .mdl-card__title{
+.softSkills > .mdl-card__title {
     color: #fff;
     height: 176px;
     background: url('../img/skillBanner.jpg') center / cover;
 }
 
+.skill-box {
+    margin-bottom: 10px;
+}
+
+.skill-programming {
+    background: url('../img/programming.png') no-repeat top;
+    background-position: 8px 15px;
+}
+
+.skill-java {
+    background: url('../img/java.png') no-repeat top;
+    background-position: 8px 15px;
+}
+
+.skill-web {
+    background: url('../img/web.png') no-repeat top;
+    background-position: 8px 15px;
+}
+
+.skill-database {
+    background: url('../img/database.png') no-repeat top;
+    background-position: 8px 15px;
+}
+
+.skill-os {
+    background: url('../img/os.png') no-repeat top;
+    background-position: 8px 15px;
+}
+
+.mdl-card__supporting-text {
+    color: black;
+}
+
+section .section__circle-container > .section__circle-container__circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    margin: 8px 0;
+}
+
+section .section__text h5 {
+    font-size: inherit;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.list-container-text {
+    border-bottom: 1px solid rgba(0, 0, 0, .13);
+}
+
+.mdl-card__supporting-text h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section .section__text {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-top: 8px;
+}
+
+section .section__circle-container {
+    width: 50px;
+}
+
+.list-container mdl-card__supporting-text{
+    margin: 10px;
+}   
+
+.list-container {
+    width: 500px;
+}
+
+.list-container .section__text {
+    padding-top: 20px;
+}

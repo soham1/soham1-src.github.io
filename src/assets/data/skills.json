@@ -1,18 +1,23 @@
 {
     "skills": [{
         "category": "Programming Languages",
-        "technologies": ["JavaScript", "HTML", "CSS", "SQL"]
+        "technologies": ["JavaScript", "HTML", "CSS", "SQL", "Java"],
+        "id": "programming"
     }, {
         "category": "Java Technologies",
-        "technologies": ["Spring Boot", "Maven", "Servlets", "JSPs", "OAuth2", "Webjars", "JPA"]
+        "technologies": ["Spring Boot", "Maven", "Servlets", "JSPs", "OAuth2", "Webjars", "JPA"],
+        "id": "java"
     }, {
         "category": "Web Technologies",
-        "technologies": ["Node.js", "Express", "EJS Templates", "Passport", "Angular 2", "Handlebars", "Materialize", "Bootstrap", "Bootswatch Themes", "jQuery"]
+        "technologies": ["Node.js", "Express", "EJS Templates", "Passport", "Angular 2", "Handlebars", "Materialize", "Bootstrap", "Bootswatch Themes", "jQuery"],
+        "id": "web"
     }, {
         "category": "Databases and Related Technologies",
-        "technologies": ["SQL Server", "MongoDB", "MySQL", "Mongoose"]
+        "technologies": ["SQL Server", "MongoDB", "MySQL", "Mongoose"],
+        "id": "database"
     }, {
         "category": "Operating Systems",
-        "technologies": ["Linux", "Windows", "OS X", "Can install and configure the systems above"]
+        "technologies": ["Linux", "Windows", "OS X", "Can install and configure the systems above"],
+        "id": "os"
     }]
 }

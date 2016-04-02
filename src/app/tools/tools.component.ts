@@ -13,12 +13,19 @@ console.log('`Tools` component loaded asynchronously');
   selector: 'tools',
   //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
   template: `
-    <table>
-      <tr *ngFor="#tool of tools">
-        <td>{{tool.name}}</td>
-        <td>{{tool.description}}</td>
-      </tr>
-    </table>
+     <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp list-container">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div *ngFor="#tool of tools" class="mdl-card__supporting-text list-container-text mdl-grid mdl-grid--no-spacing">
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>{{tool.description}}</h5>
+                  <div>{{tool.name}}</div>
+                </div>
+              </div>
+            </div>
+      </section>
   `
 })
 
