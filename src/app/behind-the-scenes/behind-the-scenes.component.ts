@@ -5,7 +5,7 @@ console.log('`Behind The Scenes` component loaded asynchronously');
 
 @Component({
   selector: 'about-me',
-  templateUrl: "app/behind-the-scenes/behind-the-scenes.html"
+  template: require("./behind-the-scenes.html")
 })
 
 export class BehindTheScenesComponent {

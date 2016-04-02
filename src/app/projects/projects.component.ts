@@ -13,12 +13,26 @@ console.log('`Projects` component loaded asynchronously');
   selector: 'project',
   //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
   template: `
-    <table>
-      <tr *ngFor="#project of projects">
-        <td><a href="{{project.projectURL}}">{{project.projectName}}</a></td>
-        <td>{{project.description}}</td>
-      </tr>
-    </table>
+  
+    <div *ngFor="#project of projects" class="demo-card-event github-project mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <h4>{{project.projectName}}</h4>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <h6>{{project.description}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-card__menu">
+            <a href="{{project.projectURL}}" target="blank">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">link</i>
+                </button>
+            </a>
+        </div>
+    </div>
   `
 })
 

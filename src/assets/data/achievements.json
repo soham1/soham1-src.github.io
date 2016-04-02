@@ -1,9 +1,13 @@
 {
     "achievements": [{
         "name": "Passing Entrance Exam",
-        "description": "Holberton Software Engineering School of San Francisco"
+        "description": "Holberton Software Engineering School of San Francisco",
+        "achievementURL": "https://www.holbertonschool.com/",
+        "id": "holberton"
     }, {
         "name": "Winning Two Prizes (1st Prize and Honorable Mention)",
-        "description": "DeveloperWeek 2016 Hackathon"
+        "description": "DeveloperWeek 2016 Hackathon",
+        "achievementURL": "http://us5.campaign-archive2.com/?u=9f191d9b60906620211eb16d9&id=87551f955b&e=140ad165ac",
+        "id": "developer-week"
     }]
 }

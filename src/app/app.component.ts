@@ -28,8 +28,8 @@ var material = require('exports?componentHandler&MaterialRipple!material-design-
   pipes: [ ],
   providers: [ ResumeDataService, HTTP_PROVIDERS ],
   directives: [ RouterActive, NgClass ],
-  styleUrls: ["app/app.component.css"],
-  templateUrl: "app/app.component.html",
+  styleUrls: [require("./app.component.css")],
+  template: require("./app.component.html"),
   //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
   // template: `
   //   <header>

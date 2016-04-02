@@ -5,7 +5,7 @@ console.log('`About Me` component loaded asynchronously');
 
 @Component({
   selector: 'about-me',
-  templateUrl: "app/about-me/about-me.html"
+  template: require("./about-me.html")
 })
 
 export class AboutMeComponent {

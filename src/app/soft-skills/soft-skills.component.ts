@@ -23,7 +23,7 @@ console.log('`Soft Skills` component loaded asynchronously');
     
     <div class="demo-card-wide softSkills mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">What is my EQ?</h2>
+            <h2 class="mdl-card__title-text">What type of person am I?</h2>
         </div>
         <div class="mdl-card__supporting-text">
             <ul>

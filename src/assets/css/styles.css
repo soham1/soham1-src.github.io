@@ -179,3 +179,50 @@ section .section__circle-container {
 .list-container .section__text {
     padding-top: 20px;
 }
+
+.github-project.mdl-card {
+  width: 600px;
+  background: #3E4EB8;
+  margin-bottom: 10px;
+}
+.github-project > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.github-project > .mdl-card__title {
+  align-items: flex-start;
+}
+.github-project > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.github-project > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.github-project > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.github-project > .mdl-card__title,
+.github-project > .mdl-card__actions,
+.github-project > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+.github-link {
+    margin-right: 8px;
+    line-height: inherit;
+}
+
+.achievements-box {
+    margin-bottom: 10px;
+}
+
+.achievement-holberton {
+    background: url('../img/holberton.png') no-repeat top;
+    background-position: 31px 14px;
+}
+
+.achievement-developer-week {
+    background: url('../img/award.png') no-repeat top;
+    background-position: 31px 14px;
+}

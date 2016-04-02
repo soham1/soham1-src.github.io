@@ -13,11 +13,19 @@ console.log('`Education` component loaded asynchronously');
   selector: 'education',
   //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
   template: `
-    <table>
-      <tr *ngFor="#education of educations">
-        <td>{{education.name}}</td>
-        <td>{{education.origin}}</td>
-      </tr>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+      <thead>
+        <tr>
+           <th class="mdl-data-table__cell--non-numeric">Name</th>
+           <th class="mdl-data-table__cell--non-numeric">Origin</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr *ngFor="#education of educations">
+        <td class="mdl-data-table__cell--non-numeric">{{education.name}}</td>
+        <td class="mdl-data-table__cell--non-numeric">{{education.origin}}</td>
+       </tr>
+      </tbody>  
     </table>
   `
 })
