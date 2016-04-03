@@ -52,7 +52,7 @@ export class ResumeDataService {
     public titleMap = new Map();
 
     constructor(private _http: Http) {
-        this.titleMap.set("", "Computer Science Skills");
+        this.titleMap.set("", "About Me");
         this.titleMap.set("skills", "Computer Science Skills");
         this.titleMap.set("softSkills", "Soft Skills");
         this.titleMap.set("educations", "Computer Science Education");

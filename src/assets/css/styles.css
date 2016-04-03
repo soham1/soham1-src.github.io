@@ -182,7 +182,7 @@ section .section__circle-container {
 
 .github-project.mdl-card {
   width: 600px;
-  background: #3E4EB8;
+  background: #69f0ae;
   margin-bottom: 10px;
 }
 .github-project > .mdl-card__actions {
@@ -190,6 +190,7 @@ section .section__circle-container {
 }
 .github-project > .mdl-card__title {
   align-items: flex-start;
+  color: black !important;
 }
 .github-project > .mdl-card__title > h4 {
   margin-top: 0;
@@ -225,4 +226,16 @@ section .section__circle-container {
 .achievement-developer-week {
     background: url('../img/award.png') no-repeat top;
     background-position: 31px 14px;
+}
+
+.mdl-layout-title {
+    color: black;
+}
+
+.link {
+    color: black;
+}
+
+.mdl-layout__content {
+    background-color: #fff59d !important;
 }

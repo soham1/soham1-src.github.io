@@ -5,7 +5,6 @@ import {Component} from 'angular2/core';
 import {RouteConfig, Router} from 'angular2/router';
 import {NgClass} from 'angular2/common';
 
-import {Home} from './home';
 import {SkillsComponent} from './skills';
 import {SoftSkillsComponent} from './soft-skills/soft-skills.component';
 import {EducationsComponent} from './educations/educations.component';
@@ -28,7 +27,7 @@ var material = require('exports?componentHandler&MaterialRipple!material-design-
   pipes: [ ],
   providers: [ ResumeDataService, HTTP_PROVIDERS ],
   directives: [ RouterActive, NgClass ],
-  styleUrls: [require("./app.component.css")],
+  styles: [require("./app.component.css")],
   template: require("./app.component.html"),
   //styleUrls: ["assets/css/material.light_blue-orange.min.css"],
   // template: `

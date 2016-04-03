@@ -28,7 +28,7 @@ console.log('`Projects` component loaded asynchronously');
         <div class="mdl-card__menu">
             <a href="{{project.projectURL}}" target="blank">
                 <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                    <i class="material-icons">link</i>
+                    <i class="link material-icons">link</i>
                 </button>
             </a>
         </div>
